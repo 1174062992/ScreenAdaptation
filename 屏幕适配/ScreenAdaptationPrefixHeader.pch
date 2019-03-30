@@ -1,0 +1,53 @@
+//
+//  ScreenAdaptationPrefixHeader.pch
+//  屏幕适配
+//
+//  Created by 曹记 on 2019/3/30.
+//  Copyright © 2019 曹记. All rights reserved.
+//
+
+#ifndef ScreenAdaptationPrefixHeader_pch
+#define ScreenAdaptationPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//获得屏幕的宽高
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+
+/**************IphoneX IphoneXR IphoneXS IphoneSXMax*****************************/
+//iPhoneX / iPhoneXS
+#define  isIphoneX_XS     (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+//iPhoneXR / iPhoneXSMax
+#define  isIphoneXR_XSMax    (kScreenWidth == 414.f && kScreenHeight == 896.f ? YES : NO)
+//异性全面屏
+#define   isFullScreen    (isIphoneX_XS || isIphoneXR_XSMax)
+
+// Status bar height.
+#define  StatusBarHeight     (isFullScreen ? 44.f : 20.f)
+
+// Navigation bar height.
+#define  NavigationBarHeight  44.f
+
+// Tabbar height.
+#define  TabbarHeight         (isFullScreen ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  TabbarSafeBottomMargin         (isFullScreen ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define  StatusBarAndNavigationBarHeight  (isFullScreen ? 88.f : 64.f)
+/**************IphoneX IphoneXR IphoneXS IphoneSXMax*****************************/
+
+/* iOS设备 */
+#define kDevice_Is_iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6PlusBigMode ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen]currentMode].size) : NO)
+//适配参数
+#define KsuitParam (kDevice_Is_iPhone6Plus ?1.12:(kDevice_Is_iPhone6?1.0:(iPhone6PlusBigMode ?1.01:0.85))) //以6为基准图
+
+
+#endif /* ScreenAdaptationPrefixHeader_pch */

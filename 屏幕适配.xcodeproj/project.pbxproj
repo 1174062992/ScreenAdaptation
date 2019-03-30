@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3EB31702224E9661001282DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31701224E9661001282DA /* AppDelegate.m */; };
-		3EB31705224E9661001282DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31704224E9661001282DA /* ViewController.m */; };
 		3EB31708224E9661001282DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB31706224E9661001282DA /* Main.storyboard */; };
 		3EB3170A224E9663001282DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB31709224E9663001282DA /* Assets.xcassets */; };
 		3EB3170D224E9663001282DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3170B224E9663001282DA /* LaunchScreen.storyboard */; };
 		3EB31710224E9663001282DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3170F224E9663001282DA /* main.m */; };
 		3EB3171A224E9663001282DA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31719224E9663001282DA /* ____Tests.m */; };
 		3EB31725224E9663001282DA /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31724224E9663001282DA /* ____UITests.m */; };
+		3EB31735224E9720001282DA /* NSLayoutConstraint+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31734224E9720001282DA /* NSLayoutConstraint+IBDesignable.m */; };
+		3EB31739224EAF86001282DA /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB31738224EAF86001282DA /* LogInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		3EB316FD224E9661001282DA /* 屏幕适配.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "屏幕适配.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB31700224E9661001282DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EB31701224E9661001282DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3EB31703224E9661001282DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3EB31704224E9661001282DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3EB31707224E9661001282DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EB31709224E9663001282DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB3170C224E9663001282DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,11 @@
 		3EB31720224E9663001282DA /* 屏幕适配UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "屏幕适配UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB31724224E9663001282DA /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		3EB31726224E9663001282DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB31732224E96C9001282DA /* ScreenAdaptationPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdaptationPrefixHeader.pch; sourceTree = "<group>"; };
+		3EB31733224E9720001282DA /* NSLayoutConstraint+IBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+IBDesignable.h"; sourceTree = "<group>"; };
+		3EB31734224E9720001282DA /* NSLayoutConstraint+IBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+IBDesignable.m"; sourceTree = "<group>"; };
+		3EB31737224EAF86001282DA /* LogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		3EB31738224EAF86001282DA /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,14 @@
 			children = (
 				3EB31700224E9661001282DA /* AppDelegate.h */,
 				3EB31701224E9661001282DA /* AppDelegate.m */,
-				3EB31703224E9661001282DA /* ViewController.h */,
-				3EB31704224E9661001282DA /* ViewController.m */,
+				3EB3173A224EAF8E001282DA /* LogIn */,
+				3EB31736224EAF06001282DA /* NSLayoutConstraint */,
 				3EB31706224E9661001282DA /* Main.storyboard */,
 				3EB31709224E9663001282DA /* Assets.xcassets */,
 				3EB3170B224E9663001282DA /* LaunchScreen.storyboard */,
 				3EB3170E224E9663001282DA /* Info.plist */,
 				3EB3170F224E9663001282DA /* main.m */,
+				3EB31732224E96C9001282DA /* ScreenAdaptationPrefixHeader.pch */,
 			);
 			path = "屏幕适配";
 			sourceTree = "<group>";
@@ -130,6 +135,24 @@
 				3EB31726224E9663001282DA /* Info.plist */,
 			);
 			path = "屏幕适配UITests";
+			sourceTree = "<group>";
+		};
+		3EB31736224EAF06001282DA /* NSLayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				3EB31733224E9720001282DA /* NSLayoutConstraint+IBDesignable.h */,
+				3EB31734224E9720001282DA /* NSLayoutConstraint+IBDesignable.m */,
+			);
+			path = NSLayoutConstraint;
+			sourceTree = "<group>";
+		};
+		3EB3173A224EAF8E001282DA /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3EB31737224EAF86001282DA /* LogInViewController.h */,
+				3EB31738224EAF86001282DA /* LogInViewController.m */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB31705224E9661001282DA /* ViewController.m in Sources */,
+				3EB31739224EAF86001282DA /* LogInViewController.m in Sources */,
+				3EB31735224E9720001282DA /* NSLayoutConstraint+IBDesignable.m in Sources */,
 				3EB31710224E9663001282DA /* main.m in Sources */,
 				3EB31702224E9661001282DA /* AppDelegate.m in Sources */,
 			);
@@ -436,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/屏幕适配/ScreenAdaptationPrefixHeader.pch";
 				INFOPLIST_FILE = "屏幕适配/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/屏幕适配/ScreenAdaptationPrefixHeader.pch";
 				INFOPLIST_FILE = "屏幕适配/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
